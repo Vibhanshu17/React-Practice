@@ -1,0 +1,77 @@
+const explorer = {
+    name: "root",
+    isFolder: true,
+    items: [
+      {
+        id: "1",
+        name: "public",
+        isFolder: true,
+        items: [
+          {
+            id: "2",
+            name: "public nested folder",
+            isFolder: true,
+            items: [
+              {
+                id: "3",
+                name: "index.html",
+                isFolder: false,
+                items: [],
+              },
+              {
+                id: "4",
+                name: "hello.html",
+                isFolder: false,
+                items: [],
+              },
+            ],
+          },
+          {
+            id: "5",
+            name: "public nested file",
+            isFolder: false,
+            items: [],
+          },
+        ],
+      },
+      {
+        name: "src",
+        isFolder: true,
+        items: [
+          {
+            id: "6",
+            name: "nested empty folder",
+            isFolder: true,
+            items: [],
+          },
+          {
+            id: "7",
+            name: "App.js",
+            isFolder: false,
+            items: [],
+          },
+          {
+            id: "8",
+            name: "index.js",
+            isFolder: false,
+            items: [],
+          },
+          {
+            id: "9",
+            name: "style.css",
+            isFolder: false,
+            items: [],
+          },
+        ],
+      },
+      {
+        id: "10",
+        name: "package.json",
+        isFolder: false,
+        items: [],
+      },
+    ],
+  };
+  
+  export default explorer;
+  
