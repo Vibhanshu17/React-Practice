@@ -1,4 +1,5 @@
 import { motion, useAnimationControls } from "framer-motion";
+import "../App.css";
 import React, { useState } from "react";
 
 function TextSpan({ letter }) {
@@ -39,6 +40,7 @@ function TextSpan({ letter }) {
         if (!isPlaying) rubberBand();
       }}
       onAnimationComplete={() => setIsPlaying(false)}
+      className="text-hover-span"
     >
       {letter}
     </motion.span>
