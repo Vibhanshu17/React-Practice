@@ -33,7 +33,7 @@ function SlideTabs({ menu }) {
   return (
     <ul
       onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
-      className="relative mx-auto flex w-fit border-2 border-black rounded-full b-white p-1"
+      className="relative mx-auto flex w-fit border-2 border-black rounded-full bg-white p-1"
     >
       {menu.map((item, index) => (
         <Tab key={index} setPosition={setPosition}>

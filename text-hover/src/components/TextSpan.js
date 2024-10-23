@@ -40,7 +40,7 @@ function TextSpan({ letter }) {
         if (!isPlaying) rubberBand();
       }}
       onAnimationComplete={() => setIsPlaying(false)}
-      className="text-hover-span"
+      style={{ fontSize: "5rem" }}
     >
       {letter}
     </motion.span>
