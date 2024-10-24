@@ -1,22 +1,25 @@
 import React from "react";
 import TextHover from "./components/TextHover";
-import SlideTabs from "./components/SlideTabs";
 import Hamburger from "./components/Hamburger";
-
+import TypewriterText from "./components/TypewriterText";
 function App() {
-  const menu = ["Home", "Projects", "Resume", "Cool Websites", "Contact Me"];
-
   return (
-    <div className="App">
-      <div className="grid h-1/3 p-2 place-content-end bg-neutral-100">
-        <SlideTabs menu={menu} />
-      </div>
-      <div className="grid mx-auto place-content-center bg-gradient-to-br from-violet-500 to-indigo-500">
-        <Hamburger />
-      </div>
-      <hr />
-      <TextHover sentence="Hi," />
-      <TextHover sentence="I'm Vibhanshu" />
+    <div className="App min-h-screen  flex-col justify-between ">
+      <>
+        <div>
+          {/* <div className="grid relative bg-gradient-to-br from-violet-400 to-indigo-900"> */}
+          <Hamburger />
+          {/* </div> */}
+          <hr />
+        </div>
+        <div className="mx-4">
+          <TextHover sentence="Hi," />
+          <TextHover sentence="I'm Vibhanshu" />
+          <p>#TODO: add onClick() in SlideTabs | Add Routing</p>
+        </div>
+
+        <TypewriterText />
+      </>
     </div>
   );
 }
